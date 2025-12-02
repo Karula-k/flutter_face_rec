@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_face_rec/core/router/go_router..dart';
-import 'package:flutter_face_rec/core/theme/lightheme.dart';
+import 'package:flutter_face_rec/core/router/app_router.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
 
-  runApp((const MyApp()));
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
@@ -14,7 +14,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      theme: lightTheme,
       routerConfig: AppRouter.goRouter,
     );
   }

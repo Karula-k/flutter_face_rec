@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
 extension MyColors on Color {
-  static MaterialColor primary = const MaterialColor(0XFF5E59FF, <int, Color>{
-    900: Color(0XFF3F3BAA),
-    700: Color(0XFF4E4AD4),
-    500: Color(0XFF5E59FF),
-    300: Color(0XFF7975FF),
-    100: Color(0XFFF0F0FF),
+  static MaterialColor primary = const MaterialColor(0XFFFF0080, <int, Color>{
+    900: Color(0XFFB8005C),
+    700: Color(0XFFD4006E),
+    500: Color(0XFFFF0080),
+    300: Color(0XFFFF3399),
+    100: Color(0XFFFFE6F2),
   });
 
-  static MaterialColor secondary = const MaterialColor(0xFF808390, <int, Color>{
-    900: Color(0XFF4D4F56),
-    700: Color(0XFF666973),
-    500: Color(0xFF808390),
-    300: Color(0XFF999CA6),
-    100: Color(0XFFF3F3F4),
+  static MaterialColor secondary = const MaterialColor(0xFF00FFFF, <int, Color>{
+    900: Color(0XFF00B3B3),
+    700: Color(0XFF00CCCC),
+    500: Color(0xFF00FFFF),
+    300: Color(0XFF33FFFF),
+    100: Color(0XFFE6FFFF),
   });
 
   static MaterialColor neutral = const MaterialColor(0xFF707784, {
